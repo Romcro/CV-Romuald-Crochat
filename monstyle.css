@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face { 
+    font-family: 'desyrel_regular_macroman';
+    src: url('desyrel_regular_macroman/desyrel-webfont.eot');
+    src: url('desyrel_regular_macroman/desyrel-webfont.eot#iefix') format('embedded-opentype'),
+         url('desyrel_regular_macroman/desyrel-webfont.woff') format('woff'),
+         url('desyrel_regular_macroman/desyrel-webfont.ttf') format('truetype'),
+         url('desyrel_regular_macroman/desyrel-webfont.svg#desyrel_regular_macroman') format('svg');
+}
+
+
+* {
+
+        box-sizing: border-box;
+       	padding:0;
+        margin:0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vh;
+        color:#21211f;
+        text-align: justify-all;
+
+}
+
+body {
+		
+		background-image: url(images/300ppi/fond_4@72x.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+}
+
+h1, h2 , h3, h4, h5, h6 {
+
+	font-family: 'desyrel_regular_macroman', Arial, serif;
+}
+
+a {
+
+	text-decoration: none;
+}
+
+h1 {
+
+		text-align: center;
+		font-size: 3em;
+
+}
+
+h1:hover {
+
+	color: red;
+}
+
+h2 {
+
+		text-align: center;
+		font-size: 2em;
+
+}
+
+h3 {
+
+		font-size: 1.5em;
+		text-align: center;
+
+}
+
+#liseret, main{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#liseret {   
+    width: 10%;
+    min-height: 100vh;
+	background-color:#d79A10;
+	position : fixed;
+    top: 0;
+
+}
+
+main{
+	position: relative;
+	width: 90%;
+	left: 10%;
+	
+}
+
+
+#photocv {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:30vh;
+	margin-top: 5px;
+
+}
+
+#parcourspro {
+		width:100%;
+		padding-left:5%;
+
+}
+
+#parcourspro ul li {
+
+	padding-left:3%;
+}
+
+#formation {
+		width:100%;
+
+		
+}
+
+#formation ul
+{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around; 
+	text-align: center;
+	list-style-type: none;
+	width: 100%;
+	
+}
+
+#formation ul li
+{
+padding:15px;
+	
+}
+
+#divcompetences {
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+
+}
+
+#competences article {
+
+	padding:5px;
+	width:25%;
+	background-color: #d79A10;
+	border-radius: 30px;
+	margin:5%;
+	box-shadow: 5px 5px 5px 5px rgb(194, 185, 185);	
+	
+}
+
+
+#competences ul {
+
+	list-style-type: none;
+	padding:10px;
+	
+}
+
+/******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******/
+
+/******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******//******** RESPONSIVE******/
+
+/******** Pont de rupture TABLETTE******/
+
+@media only screen and (max-device-width:1024px)
+
+{
+
+* {
+
+		font-size: 2.2vh;
+
+
+	}
+
+h1 {
+
+	font-size: 3.5em;
+}
+
+
+
+h2 {
+
+	font-size: 3em;
+}
+
+#liseret {   
+display: none;
+	}
+
+
+
+main {
+
+		width:100%;
+		left:0%;
+	}
+
+main section {
+
+		width:100%;
+	
+	}
+
+#formation ul {
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+	list-style-type: none;
+
+	}
+
+
+#divcompetences {
+
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		width: 100%;
+	
+	}
+
+#competences article {
+
+		padding:5px;
+		width:90%;
+		background-color: #d79A10;
+		border-radius: 30px;
+		margin:5%;
+		box-shadow: 5px 5px 5px 5px rgb(194, 185, 185);
+		
+		
+	}
+
+}
+
+/******** Pont de rupture Mobile ******/
+
+@media only screen and (max-device-width:700px)
+
+{
+
+* {
+		font-size: 1vh;
+	}
+
+h1 {
+
+	size:2em;
+	}	
+}
+

@@ -215,6 +215,13 @@ main {
 		left:0%;
 	}
 
+#contact {
+
+    display: flex;
+	flex-direction: column;
+	text-align: center;
+	}	
+
 
 
 #formation ul {
@@ -266,7 +273,12 @@ main {
 		font-size: 1vh;
 	}
 
+#contact a {
+  
+	font-size: 2em;
 
+		}	
+	
 
 }
 

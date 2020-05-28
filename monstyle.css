@@ -11,34 +11,24 @@
 
 
 * {
-
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2.5vh;
-	color: #37474F;
+	font-size: 2vh;
 	text-align: justify-all;
 
 }
 
-body {
-
-	background-image: url(images/300ppi/fond_4@72x.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-
-}
-
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2
+ {
 
-	font-family: 'desyrel_regular_macroman', Arial, serif;
+	font-family: 'desyrel_regular_macroman', Arial, serif;line-height: 2em;
+	
 }
+
+
 
 a {
 
@@ -48,7 +38,9 @@ a {
 h1 {
 
 	text-align: center;
-	font-size: 3em;
+	font-size: 4em;
+
+
 
 }
 
@@ -56,58 +48,74 @@ h2 {
 
 	text-align: center;
 	font-size: 2em;
+	background-color:#FFB300;
+	color:#1A237E;
+
 
 }
 
 h3 {
 
 	font-size: 1.5em;
-	text-align: center;
+	
+
 
 }
 
-#liseret,
+
 main {
-	display: inline-block;
-	vertical-align: top;
-}
 
-#liseret {
-	width: 10%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 	min-height: 100vh;
-	background-color: #d79A10;
-	position: fixed;
-	top: 0;
+
 
 }
 
-main {
-	position: relative;
-	width: 90%;
-	left: 10%;
+p { width: 90%;text-align: justify;padding: 0 5% 0 5% ;}
 
+#gauche {
+	background-color:#1A237E;
+	width: 30%;
+	color:white;
 }
 
+#droite {
+
+	width: 70%;
+	color:#1A237E;
+}
+
+#titre { height:40vh;}
+
+#photetcontact { height:40vh;}
+
+#titreresponsive {display: none;}
 
 #photocv {
 
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 30vh;
-	margin-top: 5px;
-
+	width: 20vh;
 }
 
 #contact {
 
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
 	list-style-type: none;
+	line-height: 2em;
+	
 
 }
+
+#contact a { color:white;}
+
+#contact a:hover { color:#FFB300;}
 
 .fa-globe {
 
@@ -124,30 +132,27 @@ main {
 	color: red;
 }
 
-section {
+.fas { font-size: 3vh;}
 
-	width: 100%;
-	padding: 0 5% 0 5%;
+.fas:hover {color:#FFB300; }
 
+ul li {
 
-}
-
-
-#parcourspro ul li {
-
-	padding-left: 3%;
-}
-
-
-#formation ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	text-align: center;
+	padding-left: 3vh;
 	list-style-type: none;
+	line-height: 2em;
+}
+
+.experience  {
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	text-align: justify;
 
 
 }
+
 
 
 #divcompetences {
@@ -193,21 +198,8 @@ section {
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
 
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
 
-/******** Pont de rupture TABLETTE******/
+/******** Point de rupture TABLETTE******/
 
 @media only screen and (max-device-width:1024px) {
 
@@ -218,29 +210,37 @@ section {
 
 	}
 
+	main {
+
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	
+	
+	}
+
+	#gauche, #droite { width: 100%;}
+
+	#photetcontact { height:auto;}
+
+	#titreresponsive {display: block;}
+
 	h1 {
 
-		font-size: 3.5em;
+		font-size: 1.5em;
+		color:white;
+	
 	}
 
 
 
 	h2 {
 
-		font-size: 3em;
-	}
-
-	#liseret {
-		display: none;
+		font-size: 1em;
 	}
 
 
-
-	main {
-
-		width: 100%;
-		left: 0%;
-	}
+	#titre {display: none;}
 
 	#contact {
 

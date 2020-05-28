@@ -9,6 +9,8 @@
 		url('desyrel_regular_macroman/desyrel-webfont.svg#desyrel_regular_macroman') format('svg');
 }
 
+/******** Global *******/
+
 
 * {
 	box-sizing: border-box;
@@ -20,81 +22,73 @@
 
 }
 
+body {	background-color: #FAFAFA;}
+
 h1,
-h2
- {
-
-	font-family: 'desyrel_regular_macroman', Arial, serif;line-height: 2em;
-	
-}
-
-
-
-a {
-
-	text-decoration: none;
+h2 {
+	font-family: 'desyrel_regular_macroman', Arial, serif;
+	line-height: 2em;
+	color: #212121;
+	text-align: center;
 }
 
 h1 {
-
-	text-align: center;
 	font-size: 4em;
-
-
-
 }
 
 h2 {
-
-	text-align: center;
 	font-size: 2em;
-	background-color:#FFB300;
-	color:#1A237E;
-
-
+	background-color: #FFA000;
 }
 
 h3 {
-
 	font-size: 1.5em;
-	
-
-
 }
 
+a {
+	text-decoration: none;
+}
+
+p {
+	width: 100%;
+	text-align: justify;
+	padding: 2% 5%;
+}
+
+ul {
+	list-style-type: none;
+	line-height: 2em;
+	padding: 0 5%;
+}
+
+li::before {content: "\25AA"; color: #212121;
+	display: inline-block; width: 1em;
+	margin-left: -1em}
 
 main {
-
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	min-height: 100vh;
-
-
 }
 
-p { width: 90%;text-align: justify;padding: 0 5% 0 5% ;}
+/******** section gauche *******/
 
 #gauche {
-	background-color:#1A237E;
+	background-color: #212121;
 	width: 30%;
-	color:white;
+	color: #FAFAFA;
 }
 
-#droite {
-
-	width: 70%;
-	color:#1A237E;
+#photoetcontact {
+	height: 50vh;
 }
 
-#titre { height:40vh;}
-
-#photetcontact { height:40vh;}
-
-#titreresponsive {display: none;}
+#titreresponsive {
+	display: none;
+}
 
 #photocv {
-
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -102,86 +96,98 @@ p { width: 90%;text-align: justify;padding: 0 5% 0 5% ;}
 }
 
 #contact {
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	text-align: center;
+	text-align: justify;
 	list-style-type: none;
 	line-height: 2em;
-	
-
+	padding: 0 5%;
 }
 
-#contact a { color:white;}
+#contact a {
+	color: #FAFAFA;
+}
 
-#contact a:hover { color:#FFB300;}
+#contact a:hover {
+	color: #FFA000;
+}
 
 .fa-globe {
-
 	color: blue;
 }
 
 .fa-phone-square {
-
 	color: green;
 }
 
 .fa-envelope-square {
-
 	color: red;
 }
 
-.fas { font-size: 3vh;}
-
-.fas:hover {color:#FFB300; }
-
-ul li {
-
-	padding-left: 3vh;
-	list-style-type: none;
-	line-height: 2em;
+.fas {
+	font-size: 3vh;
 }
 
-.experience  {
 
+#apropos {
+	height: 80vh;
+}
+
+/******** section droite *******/
+
+#droite {
+
+	width: 70%;
+}
+
+#entete {
+	height: 50vh;
+	background-image: url(images/979.jpg);
+	background-size: cover;
+
+}
+
+#pro {
+	height: 80vh;
+}
+
+.experience {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	text-align: justify;
-
-
 }
 
+.experience span {
+	font-size: 0.8em;
+	padding: 2%;
+	width: 20%
+}
 
+.experience article {
+	width: 80%
+}
 
 #divcompetences {
-
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	text-align: center;
-
-
 }
 
-#competences article {
-
+#divcompetences article {
 	padding: 5px;
 	width: 25%;
-	background-color: #d79A10;
+	background-color: #FFA000;
 	border-radius: 30px;
 	margin: 5%;
 	box-shadow: 5px 5px 5px 5px rgb(194, 185, 185);
-
 }
 
-
-#competences ul {
-
+#divcompetences li {
 	list-style-type: none;
 	padding: 10px;
-
 }
 
 /******** RESPONSIVE******/
@@ -215,21 +221,28 @@ ul li {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-	
-	
+
+
 	}
 
-	#gauche, #droite { width: 100%;}
+	#gauche,
+	#droite {
+		width: 100%;
+	}
 
-	#photetcontact { height:auto;}
+	#photetcontact {
+		height: auto;
+	}
 
-	#titreresponsive {display: block;}
+	#titreresponsive {
+		display: block;
+	}
 
 	h1 {
 
 		font-size: 1.5em;
-		color:white;
-	
+		color: #FAFAFA;
+
 	}
 
 
@@ -240,7 +253,9 @@ ul li {
 	}
 
 
-	#titre {display: none;}
+	#titre {
+		display: none;
+	}
 
 	#contact {
 

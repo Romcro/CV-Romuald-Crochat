@@ -1,3 +1,5 @@
+/**** CODE COMMUN*****/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
@@ -9,10 +11,8 @@
 		url('desyrel_regular_macroman/desyrel-webfont.svg#desyrel_regular_macroman') format('svg');
 }
 
-/******** Global *******/
-
-
-* {
+* 
+{
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -22,87 +22,58 @@
 
 }
 
-body {	background-color: #FAFAFA;}
+body {background-color: #FAFAFA;;}
 
+
+/**** H1 à 6 *****/
 h1,
 h2 {
 	font-family: 'desyrel_regular_macroman', Arial, serif;
 	line-height: 2em;
 	color: #212121;
-	text-align: center;
+
 }
 
 h1 {
 	font-size: 4em;
+	text-align: center;
 }
+
 
 h2 {
-	font-size: 2em;
+
 	background-color: #FFA000;
+	font-size: 2em;
+
 }
 
-h3 {
-	font-size: 1.5em;
+
+h3,h4,h5,h6 {
+	font-size: 1em;
 }
+
+.div30 h2 {
+
+	text-align: center;
+
+
+}
+
+.div70 h2 {
+
+	padding-left: 1em;
+
+}
+
+.experience h3 {
+	font-size: 1.2em;
+	padding: 2%;
+	text-decoration: underline;}
+
+/**** Liens *****/
 
 a {
 	text-decoration: none;
-}
-
-p {
-	width: 100%;
-	text-align: justify;
-	padding: 2% 5%;
-}
-
-ul {
-	list-style-type: none;
-	line-height: 2em;
-	padding: 0 5%;
-}
-
-li::before {content: "\25AA"; color: #212121;
-	display: inline-block; width: 1em;
-	margin-left: -1em}
-
-main {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	min-height: 100vh;
-}
-
-/******** section gauche *******/
-
-#gauche {
-	background-color: #212121;
-	width: 30%;
-	color: #FAFAFA;
-}
-
-#photoetcontact {
-	height: 50vh;
-}
-
-#titreresponsive {
-	display: none;
-}
-
-#photocv {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20vh;
-}
-
-#contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	text-align: justify;
-	list-style-type: none;
-	line-height: 2em;
-	padding: 0 5%;
 }
 
 #contact a {
@@ -113,82 +84,192 @@ main {
 	color: #FFA000;
 }
 
-.fa-globe {
-	color: blue;
-}
+/**** Paragraphe*****/
 
-.fa-phone-square {
-	color: green;
-}
-
-.fa-envelope-square {
-	color: red;
-}
-
-.fas {
-	font-size: 3vh;
-}
-
-
-#apropos {
-	height: 80vh;
-}
-
-/******** section droite *******/
-
-#droite {
-
-	width: 70%;
-}
-
-#entete {
-	height: 50vh;
-	background-image: url(images/979.jpg);
-	background-size: cover;
-
-}
-
-#pro {
-	height: 80vh;
-}
-
-.experience {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
+p {
+	width: 100%;
 	text-align: justify;
-}
-
-.experience span {
-	font-size: 0.8em;
 	padding: 2%;
-	width: 20%
 }
 
-.experience article {
-	width: 80%
+#apropos p {
+
+	padding:4%;
 }
 
-#divcompetences {
+/**** Listes *****/
+
+ul {
+	list-style-type: none;
+	line-height: 2em;
+	text-align: justify;
+
+}
+
+li::before {
+	content: "\25AA";
+	color: #212121;
+	display: inline-block;
+	width: 1em;
+	margin-left: 1em}
+
+
+
+/**** SECTION *****/
+
+section {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		}
+	
+/**** CLASS DIV *****/
+
+	.div30 {
+		background-color: #212121;
+		width: 30%;
+		color:#FAFAFA;
+		padding: 0;
+		margin: 0;
+		
+	}
+
+	.div70 {
+		width: 70%;
+	}
+
+/**** SECTION 1 *****/
+
+	#section1 {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-around;
+			}
+
+	#entete {
+				background-image: url(images/background/979.jpg);
+				background-size: cover;
+				padding-top: 50px;
+			
+			}
+	
+	#photocv {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20vh;
+	}
+	
+	#contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: justify;
+		list-style-type: none;
+		line-height: 2em;
+		padding: 5%;
+	}
+	
+
+	.fa-globe {
+		color: blue;
+	}
+	
+	.fa-phone-square {
+		color: green;
+	}
+	
+	.fa-envelope-square {
+		color: red;
+	}
+
+	.fas {
+		font-size: 3vh;
+	}
+	
+
+
+/**** SECTION 2*****/	
+	
+	.experience {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		text-align: justify;
+
+	}
+
+	.experience article {
+		width: 80%
+	}
+
+	.date {
+		font-size: 0.8em;
+		padding: 2%;
+		width: 20%
+	}
+
+	.date::before {content: "\25AA"; color: #212121;
+		display: inline-block; width: 1em;
+		margin-left: -1em}
+	
+	
+
+
+/**** SECTION 3 *****/	
+
+#formation span{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	text-align: center;
+	width: 100%;
+
 }
 
-#divcompetences article {
-	padding: 5px;
-	width: 25%;
-	background-color: #FFA000;
-	border-radius: 30px;
-	margin: 5%;
-	box-shadow: 5px 5px 5px 5px rgb(194, 185, 185);
+#formation span article {
+
+	max-width: 20%;
+	text-align: center;
+	padding: 2%;
 }
 
-#divcompetences li {
-	list-style-type: none;
-	padding: 10px;
+#formation img {
+
+
+	height:10vh;
+
+	
 }
+
+#formation p {
+
+	text-align: center;
+}
+	
+/**** SECTION 4 *****/	
+	#divcompetences span {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		text-align: center;
+	}
+	
+	#divcompetences article {
+		padding: 5px;
+		width: 25%;
+		background-color: #FFA000;
+		border-radius: 30px;
+		margin: 5%;
+		box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
+	}
+	
+	#divcompetences li {
+		list-style-type: none;
+		padding: 10px;
+	}
+
+
 
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
@@ -207,115 +288,98 @@ main {
 
 /******** Point de rupture TABLETTE******/
 
-@media only screen and (max-device-width:1024px) {
+@media (max-width: 1024px) {
 
 	* {
 
-		font-size: 2.2vh;
-
-
-	}
-
-	main {
-
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-
-
-	}
-
-	#gauche,
-	#droite {
+		font-size:1em;
 		width: 100%;
-	}
+	
 
-	#photetcontact {
-		height: auto;
-	}
-
-	#titreresponsive {
-		display: block;
-	}
-
-	h1 {
-
-		font-size: 1.5em;
-		color: #FAFAFA;
 
 	}
 
+	h1 { font-size:2.5em;}
 
+	h2 { font-weight: 1.8em;}
 
-	h2 {
-
-		font-size: 1em;
-	}
-
-
-	#titre {
-		display: none;
-	}
-
-	#contact {
-
+	section, #section1  {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
-	}
+		justify-content: space-around;
 
+		}
 
+	.experience {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			text-align: justify;
+	
+		}
 
-	#formation ul {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
+		.date {
 
+			width: 100%
+		}
 
-
-
-	}
-
-	#formation ul li {
-
-		font-size: 2vh;
-	}
-
-
-	#divcompetences {
+	#section4 {
 
 		display: flex;
 		flex-direction: column-reverse;
+		justify-content: space-around;
+
+	}	
+
+	#divcompetences span {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		text-align: center;
-		width: 100%;
+	
+	}
+
+	#divcompetences article {
+
+		width: 85%;
+		background-color: #FFA000;
+		border-radius: 30px;
+		margin: 5%;
+		box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
+	}
+	
+
+	.div30,.div70 {width: 100%;}
+
+	#divvide { display: none;}
+
+	.experience article {
+		width: 78%;
+		padding:0 2%;
+	}
+
+	.date {
+		font-size: 0.8em;
+		padding: 2%;
 
 	}
 
-	#competences article {
-
-		padding: 5px;
-		width: 90%;
-		background-color: #d79A10;
-		border-radius: 30px;
-		margin: 5%;
-		box-shadow: 5px 5px 5px 5px rgb(194, 185, 185);
+	#formation img {
 
 
+		height:4vh;
+	
+		
 	}
 
 }
 
-/******** Pont de rupture Mobile ******/
-
-@media only screen and (max-device-width:700px) {
+@media (max-width: 600px) {
 
 	* {
-		font-size: 1vh;
-	}
 
-	#contact a {
+		font-size: 1em;
 
-		font-size: 2em;
 
 	}
 

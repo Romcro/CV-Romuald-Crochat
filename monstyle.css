@@ -11,8 +11,7 @@
 		url('desyrel_regular_macroman/desyrel-webfont.svg#desyrel_regular_macroman') format('svg');
 }
 
-* 
-{
+* {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -22,7 +21,10 @@
 
 }
 
-body {background-color: #FAFAFA;;}
+body {
+	background-color: #FAFAFA;
+	;
+}
 
 
 /**** H1 à 6 *****/
@@ -48,7 +50,10 @@ h2 {
 }
 
 
-h3,h4,h5,h6 {
+h3,
+h4,
+h5,
+h6 {
 	font-size: 1em;
 }
 
@@ -68,7 +73,8 @@ h3,h4,h5,h6 {
 .experience h3 {
 	font-size: 1.2em;
 	padding: 2%;
-	text-decoration: underline;}
+	text-decoration: underline;
+}
 
 /**** Liens *****/
 
@@ -94,7 +100,7 @@ p {
 
 #apropos p {
 
-	padding:4%;
+	padding: 4%;
 }
 
 /**** Listes *****/
@@ -111,114 +117,119 @@ li::before {
 	color: #212121;
 	display: inline-block;
 	width: 1em;
-	margin-left: 1em}
+	margin-left: 1em
+}
 
 
 
 /**** SECTION *****/
 
 section {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		}
-	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
 /**** CLASS DIV *****/
 
-	.div30 {
-		background-color: #212121;
-		width: 30%;
-		color:#FAFAFA;
-		padding: 0;
-		margin: 0;
-		
-	}
+.div30 {
+	background-color: #212121;
+	width: 30%;
+	color: #FAFAFA;
+	padding: 0;
+	margin: 0;
 
-	.div70 {
-		width: 70%;
-	}
+}
+
+.div70 {
+	width: 70%;
+}
 
 /**** SECTION 1 *****/
 
-	#section1 {
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-around;
-			}
+#section1 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
 
-	#entete {
-				background-image: url(images/background/979.jpg);
-				background-size: cover;
-				padding-top: 50px;
-			
-			}
-	
-	#photocv {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 20vh;
-	}
-	
-	#contact {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		text-align: justify;
-		list-style-type: none;
-		line-height: 2em;
-		padding: 5%;
-	}
-	
+#entete {
+	background-image: url(images/background/979.jpg);
+	background-size: cover;
+	padding-top: 50px;
 
-	.fa-globe {
-		color: blue;
-	}
-	
-	.fa-phone-square {
-		color: green;
-	}
-	
-	.fa-envelope-square {
-		color: red;
-	}
+}
 
-	.fas {
-		font-size: 3vh;
-	}
-	
+#photocv {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vh;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: justify;
+	list-style-type: none;
+	line-height: 2em;
+	padding: 5%;
+}
 
 
-/**** SECTION 2*****/	
-	
-	.experience {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		text-align: justify;
+.fa-globe {
+	color: blue;
+}
 
-	}
+.fa-phone-square {
+	color: green;
+}
 
-	.experience article {
-		width: 80%
-	}
+.fa-envelope-square {
+	color: red;
+}
 
-	.date {
-		font-size: 0.8em;
-		padding: 2%;
-		width: 20%
-	}
-
-	.date::before {content: "\25AA"; color: #212121;
-		display: inline-block; width: 1em;
-		margin-left: -1em}
-	
-	
+.fas {
+	font-size: 3vh;
+}
 
 
-/**** SECTION 3 *****/	
 
-#formation span{
+/**** SECTION 2*****/
+
+.experience {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	text-align: justify;
+
+}
+
+.experience span {
+	width: 80%
+}
+
+.date {
+	font-size: 0.8em;
+	padding: 2%;
+	width: 20%
+}
+
+.date::before {
+	content: "\25AA";
+	color: #212121;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em
+}
+
+
+
+
+/**** SECTION 3 *****/
+
+#formation article {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -227,9 +238,9 @@ section {
 
 }
 
-#formation span article {
+#formation article span {
 
-	max-width: 20%;
+	width: 20%;
 	text-align: center;
 	padding: 2%;
 }
@@ -237,37 +248,37 @@ section {
 #formation img {
 
 
-	height:10vh;
+	height: 10vh;
 
-	
+
 }
 
 #formation p {
 
 	text-align: center;
 }
-	
-/**** SECTION 4 *****/	
-	#divcompetences span {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		text-align: center;
-	}
-	
-	#divcompetences article {
-		padding: 5px;
-		width: 25%;
-		background-color: #FFA000;
-		border-radius: 30px;
-		margin: 5%;
-		box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
-	}
-	
-	#divcompetences li {
-		list-style-type: none;
-		padding: 10px;
-	}
+
+/**** SECTION 4 *****/
+#divcompetences span {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#divcompetences article {
+	padding: 5px;
+	width: 25%;
+	background-color: #FFA000;
+	border-radius: 30px;
+	margin: 5%;
+	box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
+}
+
+#divcompetences li {
+	list-style-type: none;
+	padding: 10px;
+}
 
 
 
@@ -276,6 +287,19 @@ section {
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+/******** RESPONSIVE******/
+
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
@@ -292,36 +316,42 @@ section {
 
 	* {
 
-		font-size:1em;
-		width: 100%;
-	
+		font-size: 1em;
 
 
 	}
 
-	h1 { font-size:2.5em;}
+	h1 {
+		font-size: 2.5em;
+	}
 
-	h2 { font-weight: 1.8em;}
+	h2 {
+		font-size: 1.8em;
+	}
 
-	section, #section1  {
+	section,
+	#section1 {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 
-		}
+	}
 
 	.experience {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			text-align: justify;
-	
-		}
+		display: flex;
+		flex-direction: column;
 
-		.date {
+		text-align: justify;
 
-			width: 100%
-		}
+	}
+
+	.date {
+
+		width: 100%
+	}
+
+
+
 
 	#section4 {
 
@@ -329,14 +359,14 @@ section {
 		flex-direction: column-reverse;
 		justify-content: space-around;
 
-	}	
+	}
 
 	#divcompetences span {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		text-align: center;
-	
+
 	}
 
 	#divcompetences article {
@@ -347,15 +377,20 @@ section {
 		margin: 5%;
 		box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
 	}
-	
 
-	.div30,.div70 {width: 100%;}
 
-	#divvide { display: none;}
+	.div30,
+	.div70 {
+		width: 100%;
+	}
+
+	#divvide {
+		display: none;
+	}
 
 	.experience article {
 		width: 78%;
-		padding:0 2%;
+		padding: 0 2%;
 	}
 
 	.date {
@@ -367,14 +402,14 @@ section {
 	#formation img {
 
 
-		height:4vh;
-	
-		
+		height: 4vh;
+
+
 	}
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
 	* {
 
@@ -383,5 +418,18 @@ section {
 
 	}
 
+	h1 {
+		font-size: 1em;
+	}
+
+
+	
+#formation article span {
+
+	width: 30%;
+	text-align: center;
+	padding: 2%;
+	background-color: springgreen;
+}
 
 }

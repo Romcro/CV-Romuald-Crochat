@@ -467,7 +467,8 @@ header {
 
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items:center;
+
 
 	}
 
@@ -476,8 +477,8 @@ header {
 
 		width: 80%;
 		margin: 1%;
-		text-align: center;
-		background-color: steelblue
+		
+
 	
 	}
 }

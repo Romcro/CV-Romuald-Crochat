@@ -70,7 +70,7 @@ h6 {
 
 }
 
-.experience h3 {
+.h3souligne {
 	font-size: 1.2em;
 	padding: 2%;
 	text-decoration: underline;
@@ -229,7 +229,7 @@ header {
 
 /**** SECTION 3 *****/
 
-#formation article {
+#formation div {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -238,12 +238,12 @@ header {
 
 }
 
-#formation article span {
+#formation div article {
 
 	width: 20%;
 	text-align: center;
 	padding: 2%;
-	font-size: 0.2em;
+
 }
 
 #formation img {

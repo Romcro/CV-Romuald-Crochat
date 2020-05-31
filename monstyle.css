@@ -124,7 +124,7 @@ li::before {
 
 /**** SECTION *****/
 
-main, footer {
+#section2, #section3, footer {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;

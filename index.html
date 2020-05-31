@@ -11,7 +11,7 @@
 
 <body>
 
-	<section id="section1"><!--SECTION 1: titre+photo et contact-->
+	<header>
 
 		<div id="entete" class="div70"><!--titre-->
 			<h1>ROMUALD CROCHAT, <br> développeur web freelance</h1>
@@ -22,7 +22,7 @@
 			<a href="images/mesphotos/moi.jpg" target="blank"><img id="photocv" src="images/mesphotos/moi.png"
 					alt="Photo Romuald CROCHAT" /></a><!-- photo-->
 
-			<h2>Contact</h2>
+				<p>Contact</p>
 
 			<article id="contact"><!-- lien contact-->
 				
@@ -37,12 +37,12 @@
 
 		</div> <!-- fin Photo d'identité+ Lien contact-->
 
+		
+	</header>
 
-	</section><!--FIN SECTION 1: titre+photo et contact-->
+	<main id="section2"><!--SECTION 2: A propos+experience-->
 
-	<section id="section2"><!--SECTION 2: A propos+experience-->
-
-		<div id="apropos" class="div30"><!-- div a propos-->
+		<section id="apropos" class="div30"><!-- div a propos-->
 			
 			<h2>À propos de moi</h2>
 
@@ -58,15 +58,15 @@
 				Tout ce qui m'a amené aujourd'hui à orienter ma carrière vers le Design Web, le conseil en
 				communication
 				est un atout majeur à mes compétences.</p>
-		</div><!-- fin div a propos-->
+		</section><!-- fin div a propos-->
 
-		<div id="pro" class="div70"><!--div experience-->
+		<section id="pro" class="div70"><!--div experience-->
 
 			<h2><i class="fas fa-briefcase"></i>&nbsp;Mon expérience</h2>
 
-			<article class="experience">
+			<div class="experience">
 				<p class="date">Depuis Octobre 2018 </p>
-				<span>
+				<article>
 
 
 					<h3>Freelance</h3>
@@ -78,13 +78,13 @@
 						<li>Avril à Juin 2019: Consult’im, chargé de communication, <em>Paris</em></li>
 						<li>Novembre 2018: L'oreille est Hardie, conception d'un site web, <em>Nancy</em></li>
 					</ul>
-				</span>
+				</articlen>
 
-			</article>
+			</div>
 
-			<article class="experience">
+			<div class="experience">
 				<p class="date">De 2006 à 2017 </p>
-				<span>
+				<article>
 
 					<h3>Saint-gobain PAM</h3>
 					<ul>
@@ -99,13 +99,13 @@
 
 
 					</ul>
-				</span>
+				</article>
 
-			</article>
+			</div>
 
-			<article class="experience">
+			<div class="experience">
 				<p class="date">De 2003 à 2006 </p>
-				<span>
+				<article>
 
 					<h3>Commercial sédentaire</h3>
 
@@ -120,15 +120,15 @@
 
 
 					</ul>
-				</span>
+				</article>
 
-			</article>
-		</div><!--div experience-->
+			</div>
+		</section><!--div experience-->
 
 
-	</section>
+	</main>
 
-	<section id="section3">
+	<main id="section3">
 
 		<div id="divvide" class="div30"></div>
 
@@ -168,19 +168,19 @@
 		</div>
 
 
-	</section>
+	</main>
 
-	<section id="section4">
+	<footer id="section4">
 
-		<div class="div30">
+		<section class="div30">
 			<h2>Loisirs</h2>
-		</div>
+		</section>
 
-		<div id="divcompetences" class="div70">
+		<section id="divcompetences" class="div70">
 
 			<h2><i class="fas fa-code"></i>&nbsp;Mes compétences</h2>
 
-			<span>
+			<div>
 
 				<article>
 					<h3>Design Graphique</h3>
@@ -213,11 +213,11 @@
 					</ul>
 				</article>
 
-			</span>
-		</div>
+			</div>
+		</section>
 
 
-	</section>
+	</footer>
 
 </body>
 

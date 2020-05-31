@@ -243,7 +243,10 @@ section {
 	width: 20%;
 	text-align: center;
 	padding: 2%;
+	font-size: 0.8em;
 }
+
+
 
 #formation img {
 
@@ -264,6 +267,7 @@ section {
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	text-align: center;
+	
 }
 
 #divcompetences article {
@@ -340,9 +344,17 @@ section {
 	.experience {
 		display: flex;
 		flex-direction: column;
-
 		text-align: justify;
+		width: 90%;
+		margin: 0 5%;
 
+	}
+
+	#photocv {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 15vh;
 	}
 
 	.date {
@@ -350,15 +362,19 @@ section {
 		width: 100%
 	}
 
-
-
-
 	#section4 {
 
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: space-around;
 
+	}
+
+	#formation article span {
+
+		width: 18%;
+		text-align: center;
+		padding: 2% 5%;
 	}
 
 	#divcompetences span {
@@ -371,11 +387,8 @@ section {
 
 	#divcompetences article {
 
-		width: 85%;
-		background-color: #FFA000;
-		border-radius: 30px;
-		margin: 5%;
-		box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
+		width: 90%;
+
 	}
 
 
@@ -388,10 +401,6 @@ section {
 		display: none;
 	}
 
-	.experience article {
-		width: 78%;
-		padding: 0 2%;
-	}
 
 	.date {
 		font-size: 0.8em;
@@ -424,12 +433,24 @@ section {
 
 
 	
+#formation article {
+
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+}
+
 #formation article span {
 
+
 	width: 30%;
-	text-align: center;
-	padding: 2%;
-	background-color: springgreen;
+	margin: 1%;
+
 }
+
+
+
 
 }

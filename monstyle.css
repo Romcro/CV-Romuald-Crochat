@@ -124,7 +124,7 @@ li::before {
 
 /**** SECTION *****/
 
-section {
+main, footer {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -147,7 +147,7 @@ section {
 
 /**** SECTION 1 *****/
 
-#section1 {
+header {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-around;
@@ -190,7 +190,7 @@ section {
 	color: red;
 }
 
-.fas {
+#contact .fas {
 	font-size: 3vh;
 }
 
@@ -206,7 +206,7 @@ section {
 
 }
 
-.experience span {
+.experience article {
 	width: 80%
 }
 
@@ -243,10 +243,8 @@ section {
 	width: 20%;
 	text-align: center;
 	padding: 2%;
-	font-size: 0.8em;
+	font-size: 0.2em;
 }
-
-
 
 #formation img {
 
@@ -262,7 +260,7 @@ section {
 }
 
 /**** SECTION 4 *****/
-#divcompetences span {
+#divcompetences div {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;

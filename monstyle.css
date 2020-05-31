@@ -82,13 +82,8 @@ a {
 	text-decoration: none;
 }
 
-#contact a {
-	color: #FAFAFA;
-}
 
-#contact a:hover {
-	color: #FFA000;
-}
+
 
 /**** Paragraphe*****/
 
@@ -174,7 +169,17 @@ header {
 	text-align: justify;
 	list-style-type: none;
 	line-height: 2em;
-	padding: 5%;
+
+}
+
+#contact a {
+	color: #FAFAFA;
+	line-height: 3em;
+	padding-left: 1em;
+}
+
+#contact a:hover {
+	color: #FFA000;
 }
 
 
@@ -331,8 +336,8 @@ header {
 		font-size: 1.8em;
 	}
 
-	section,
-	#section1 {
+
+	header,#section1, #section2 {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -360,7 +365,18 @@ header {
 		width: 100%
 	}
 
-	#section4 {
+	#divvide {
+		display: none;
+	}
+
+	#formation div article {
+
+		width: 18%;
+		text-align: center;
+		padding: 2% 5%;
+	}
+
+	footer {
 
 		display: flex;
 		flex-direction: column-reverse;
@@ -368,14 +384,8 @@ header {
 
 	}
 
-	#formation article span {
 
-		width: 18%;
-		text-align: center;
-		padding: 2% 5%;
-	}
-
-	#divcompetences span {
+	#divcompetences div {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -395,9 +405,7 @@ header {
 		width: 100%;
 	}
 
-	#divvide {
-		display: none;
-	}
+
 
 
 	.date {
@@ -431,7 +439,7 @@ header {
 
 
 	
-#formation article {
+#formation div {
 
     display: flex;
 	flex-wrap: wrap;
@@ -440,7 +448,7 @@ header {
 
 }
 
-#formation article span {
+#formation div article {
 
 
 	width: 30%;
@@ -451,4 +459,25 @@ header {
 
 
 
+}
+
+@media (max-width: 500px) {
+
+	#formation div {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	#formation div article {
+
+
+		width: 80%;
+		margin: 1%;
+		text-align: center;
+		background-color: steelblue
+	
+	}
 }

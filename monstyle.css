@@ -153,15 +153,25 @@ header {
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: justify;
-	list-style-type: none;
-	line-height: 2em;
+
 
 }
 
+#contact div {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 90%;
+	padding: 2%;
+
+
+}
 #contact a {
 	color: #FAFAFA;
-	line-height: 3em;
-	padding-left: 1em;
+	line-height: 2em;
+	padding: 2%;
+	width: 100%;
 }
 
 #contact a:hover {
@@ -352,6 +362,13 @@ footer {
 		width: 15vh;
 	}
 
+	#contact {
+
+		text-align:center;
+		}
+
+
+
 	.experience {
 		display: flex;
 		flex-direction: column;
@@ -476,6 +493,14 @@ footer {
 	h3 {
 
 		font-size: 1.3em;
+	}
+
+	li::before {
+		content: "\25AA";
+		color: #212121;
+		display: inline-block;
+		width: 1em;
+		margin-left: 0em;
 	}
 
 	#formation div {

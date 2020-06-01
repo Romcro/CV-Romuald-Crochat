@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
-	font-family: 'desyrel_regular_macroman';
-	src: url('desyrel_regular_macroman/desyrel-webfont.eot');
-	src: url('desyrel_regular_macroman/desyrel-webfont.eot#iefix') format('embedded-opentype'),
-		url('desyrel_regular_macroman/desyrel-webfont.woff') format('woff'),
-		url('desyrel_regular_macroman/desyrel-webfont.ttf') format('truetype'),
-		url('desyrel_regular_macroman/desyrel-webfont.svg#desyrel_regular_macroman') format('svg');
+	font-family: 'geometrysoftpro_boldn_macroman';
+	src: url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.eot');
+	src: url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.eot#iefix') format('embedded-opentype'),
+		url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.woff') format('woff'),
+		url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.ttf') format('truetype'),
+		url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.svg#geometrysoftpro_boldn_macroman') format('svg');
 }
 
 * {
@@ -16,35 +16,37 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2vh;
+
 	text-align: justify-all;
 
 }
 
 body {
 	background-color: #FAFAFA;
-	;
+	font-size: 2vh;
 }
 
 
 /**** H1 à 6 *****/
 h1,
 h2 {
-	font-family: 'desyrel_regular_macroman', Arial, serif;
+	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
 	line-height: 2em;
 	color: #212121;
 
 }
 
+
+
 h1 {
 	font-size: 4em;
-	text-align: center;
+	text-align: justify;
+	padding-left: 2%;
 }
 
 
 h2 {
-
-	background-color: #FFA000;
+	
 	font-size: 2em;
 
 }
@@ -66,6 +68,24 @@ h2 .fas {
 	font-size: 1.2em;
 	padding: 2%;
 	text-decoration: underline;
+
+}
+
+
+/**** SPAN TYP0 *****/
+
+.yellow {
+
+	color: #FFA000;
+	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
+}
+
+.underline {
+
+	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
+	text-decoration: underline;
+	text-decoration-color: #FFA000;
+
 }
 
 /**** Liens *****/
@@ -116,6 +136,7 @@ li::before {
 .zone30 h2 {
 
 	text-align: center;
+	background-color: #FFA000;
 
 }
 
@@ -143,9 +164,22 @@ header {
 #photocv {
 	display: block;
 	margin:2% auto 2% auto;
-	width: 25vh;
-    border-radius: 15vh 0;
+	width: 90%;
+	border-radius: 80%;
+	margin: 5%;
 	
+}
+
+
+
+/**** MAIN *****/
+
+main {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 }
 
 #contact {
@@ -193,16 +227,6 @@ header {
 
 #contact .fas {
 	font-size: 3vh;
-}
-
-/**** MAIN *****/
-
-main {
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
 }
 #apropos p {
 

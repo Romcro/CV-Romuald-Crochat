@@ -62,19 +62,6 @@ h2 .fas {
 	font-size: 1em;
 }
 
-.div30 h2 {
-
-	text-align: center;
-
-
-}
-
-.div70 h2 {
-
-	padding-left: 1em;
-
-}
-
 .h3souligne {
 	font-size: 1.2em;
 	padding: 2%;
@@ -88,19 +75,12 @@ a {
 }
 
 
-
-
 /**** Paragraphe*****/
 
 p {
 	width: 100%;
 	text-align: justify;
 	padding: 2%;
-}
-
-#apropos p {
-
-	padding: 4%;
 }
 
 /**** Listes *****/
@@ -119,33 +99,8 @@ li::before {
 	width: 1em;
 	margin-left: 1em
 }
-
-
-
-/**** SECTION *****/
-
-main {
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-
-
-
-}
-
-footer {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
-
-
-
-/**** CLASS DIV *****/
-
-.div30 {
+/****** CLASS 30 ET 70 ****/
+.zone30 {
 	background-color: #212121;
 	width: 30%;
 	color: #FAFAFA;
@@ -154,11 +109,23 @@ footer {
 
 }
 
-.div70 {
+.zone70 {
 	width: 70%;
 }
 
+.zone30 h2 {
 
+	text-align: center;
+
+}
+
+.zone70 h2 {
+
+	padding-left: 1em;
+
+}
+
+/**** HEADER *****/
 
 header {
 	display: flex;
@@ -217,9 +184,19 @@ header {
 	font-size: 3vh;
 }
 
+/**** MAIN *****/
 
+main {
 
-/**** SECTION 2*****/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+#apropos p {
+
+	padding: 4%;
+}
 
 .experience {
 	display: flex;
@@ -247,11 +224,6 @@ header {
 	margin-left: -1em
 }
 
-
-
-
-/**** SECTION 3 *****/
-
 #formation div {
 	display: flex;
 	flex-wrap: nowrap;
@@ -270,10 +242,7 @@ header {
 }
 
 #formation img {
-
-
 	height: 10vh;
-
 
 }
 
@@ -282,7 +251,17 @@ header {
 	text-align: center;
 }
 
-/**** SECTION 4 *****/
+
+/**** FOOTER *****/
+
+
+footer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+
 #divcompetences div {
 	display: flex;
 	flex-wrap: nowrap;
@@ -316,8 +295,6 @@ header {
 
 }
 
-
-
 #loisirs .fas {
 
 	color: #FFA000;
@@ -337,27 +314,6 @@ header {
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
 
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-
-
-/******** Point de rupture TABLETTE******/
-
 @media (max-width: 1024px) {
 
 	* {
@@ -367,16 +323,17 @@ header {
 
 	}
 
-
-
-
-
 	h1 {
 		font-size: 2.5em;
 	}
 
 	h2 {
 		font-size: 1.8em;
+	}
+
+	.zone30,
+	.zone70 {
+		width: 100%;
 	}
 
 
@@ -387,15 +344,6 @@ header {
 
 	}
 
-	.experience {
-		display: flex;
-		flex-direction: column;
-		text-align: justify;
-		width: 90%;
-		margin: 0 5%;
-
-	}
-
 	#photocv {
 		display: block;
 		margin-left: auto;
@@ -403,13 +351,20 @@ header {
 		width: 15vh;
 	}
 
-	.date {
-
-		width: 100%
+	.experience {
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		width: 90%;
+		margin: 0 5%;
 	}
 
-	#divvide {
-		display: none;
+	.date {
+
+		width: 100%;
+		font-size: 0.8em;
+		padding: 2%;
+
 	}
 
 	#formation div article {
@@ -418,6 +373,7 @@ header {
 		text-align: center;
 		padding: 2% 5%;
 	}
+
 
 	footer {
 
@@ -443,20 +399,6 @@ header {
 	}
 
 
-	.div30,
-	.div70 {
-		width: 100%;
-	}
-
-
-
-
-	.date {
-		font-size: 0.8em;
-		padding: 2%;
-
-	}
-
 	#formation img {
 
 
@@ -479,7 +421,6 @@ header {
 		font-size: 2em;
 		margin: 5%;
 
-
 	}
 
 }
@@ -494,9 +435,8 @@ header {
 	}
 
 	h1 {
-		font-size: 1em;
+		font-size: 2em;
 	}
-
 
 
 	#formation div {
@@ -523,6 +463,20 @@ header {
 
 @media (max-width: 500px) {
 
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+
+		font-size: 1.5em;
+	}
+
+	h3 {
+
+		font-size: 1.3em;
+	}
+
 	#formation div {
 
 		display: flex;
@@ -535,6 +489,14 @@ header {
 
 		width: 80%;
 		margin: 1%;
+
+
+	}
+
+	#loisirs .fas {
+
+
+		font-size: 1.3em;
 
 
 	}

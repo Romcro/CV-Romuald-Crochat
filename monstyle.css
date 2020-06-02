@@ -16,14 +16,15 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-
 	text-align: justify-all;
+
 
 }
 
 body {
 	background-color: #FAFAFA;
 	font-size: 2vh;
+
 }
 
 
@@ -46,11 +47,18 @@ h1 {
 
 
 h2 {
-	
-	font-size: 2em;
 
+	font-size: 2em;
 }
 
+.titremain {
+
+	padding-bottom: 0.5px;
+	border-bottom: 1px solid #FFA000;
+	margin: 0 2em;
+	font-weight: normal;
+
+}
 
 h3,
 h4,
@@ -82,9 +90,9 @@ h2 .fas {
 
 .underline {
 
+	padding-bottom: 0.5px;
+	border-bottom: 1.5px solid #FFA000;
 	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
-	text-decoration: underline;
-	text-decoration-color: #FFA000;
 
 }
 
@@ -112,13 +120,15 @@ ul {
 
 }
 
-li::before {
+
+li:before {
 	content: "\25AA";
 	color: #212121;
 	display: inline-block;
 	width: 1em;
 	margin-left: 1em
 }
+
 /****** CLASS 30 ET 70 ****/
 .zone30 {
 	background-color: #212121;
@@ -163,22 +173,10 @@ header {
 
 #photocv {
 	display: block;
-	margin:2% auto 2% auto;
-	width: 90%;
+	margin: 2% auto 2% auto;
+	width: 50%;
 	border-radius: 80%;
-	margin: 5%;
-	
-}
-
-
-
-/**** MAIN *****/
-
-main {
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	margin: 5% 25%;
 
 }
 
@@ -201,6 +199,7 @@ main {
 
 
 }
+
 #contact a {
 	color: #FAFAFA;
 	line-height: 2em;
@@ -228,6 +227,20 @@ main {
 #contact .fas {
 	font-size: 3vh;
 }
+
+
+
+/**** MAIN *****/
+
+main {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
 #apropos p {
 
 	padding: 4%;
@@ -245,19 +258,19 @@ main {
 	width: 80%
 }
 
+.fa-circle,
+.fa-dot-circle {
+	color: #FFA000
+}
+
 .date {
 	font-size: 0.8em;
 	padding: 2%;
 	width: 20%
 }
 
-.date::before {
-	content: "\25AA";
-	color: #212121;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em
-}
+
+
 
 #formation div {
 	display: flex;
@@ -297,7 +310,7 @@ footer {
 }
 
 
-#divcompetences div {
+#recommandation div {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -305,19 +318,29 @@ footer {
 
 }
 
-#divcompetences article {
+#recommandation article {
 	padding: 5px;
 	width: 25%;
-	background-color: #FFA000;
-	border-radius: 30px;
-	margin: 5%;
-	box-shadow: 5px 5px 5px 5px rgb(197, 200, 202);
+
 }
 
-#divcompetences li {
-	list-style-type: none;
-	padding: 10px;
 
+
+#recommandation h3 {
+	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
+	font-size: 1.3em;
+	line-height: 2em;
+}
+
+#recommandation a {
+	color: #212121;
+	line-height: 2em;
+	padding: 2%;
+	width: 100%;
+}
+
+#recommandation a:hover {
+	color:#FFA000;
 }
 
 #loisirs {
@@ -379,6 +402,7 @@ footer {
 
 	}
 
+
 	#photocv {
 		display: block;
 		margin-left: auto;
@@ -388,9 +412,9 @@ footer {
 
 	#contact {
 
-		text-align:center;
-		}
+		text-align: center;
 
+	}
 
 
 	.experience {
@@ -426,7 +450,7 @@ footer {
 	}
 
 
-	#divcompetences div {
+	#recommandation div {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -434,20 +458,13 @@ footer {
 
 	}
 
-	#divcompetences article {
+	#recommandation article {
 
 		width: 90%;
+		margin: 5%;
 
 	}
 
-
-	#formation img {
-
-
-		height: 4vh;
-
-
-	}
 
 	#loisirs {
 
@@ -481,27 +498,13 @@ footer {
 	}
 
 
-	#formation div {
-
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-
-
-	}
-
-	#formation div article {
-
-
-		width: 30%;
-		margin: 1%;
-
-	}
-
-
-
 
 }
+
+
+
+
+
 
 @media (max-width: 500px) {
 

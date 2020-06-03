@@ -189,17 +189,6 @@ header {
 
 }
 
-#contact div {
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 90%;
-	padding: 2%;
-
-
-}
-
 #contact a {
 	color: #FAFAFA;
 	line-height: 2em;
@@ -407,7 +396,7 @@ footer {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 15vh;
+		width: 25vh;
 	}
 
 	#contact {

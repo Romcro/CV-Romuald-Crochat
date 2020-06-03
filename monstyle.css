@@ -180,19 +180,33 @@ header {
 
 }
 
+
+
+
+
+/**** MAIN *****/
+
+main {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
 #contact {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: justify;
+	padding: 4%;
 
 
 }
 
 #contact a {
 	color: #FAFAFA;
-	line-height: 2em;
-	padding: 2%;
+	line-height: 2.5em;
 	width: 100%;
 }
 
@@ -215,18 +229,6 @@ header {
 
 #contact .fas {
 	font-size: 3vh;
-}
-
-
-
-/**** MAIN *****/
-
-main {
-
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
 }
 
 
@@ -260,35 +262,6 @@ main {
 
 
 
-
-#formation div {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	text-align: center;
-	width: 100%;
-
-}
-
-#formation div article {
-
-	width: 20%;
-	text-align: center;
-	padding: 2%;
-
-}
-
-#formation img {
-	height: 10vh;
-
-}
-
-#formation p {
-
-	text-align: center;
-}
-
-
 /**** FOOTER *****/
 
 
@@ -304,16 +277,15 @@ footer {
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	text-align: center;
+	width: 90%;
+	margin: 2em 5%;
 
 }
 
 #recommandation article {
-	padding: 5px;
 	width: 25%;
-
+	margin-bottom: 2%;
 }
-
-
 
 #recommandation h3 {
 	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
@@ -326,6 +298,7 @@ footer {
 	line-height: 2em;
 	padding: 2%;
 	width: 100%;
+
 }
 
 #recommandation a:hover {
@@ -345,7 +318,7 @@ footer {
 #loisirs .fas {
 
 	color: #FFA000;
-	font-size: 3.5em;
+	font-size: 3em;
 	margin: 5%;
 
 
@@ -422,12 +395,6 @@ footer {
 
 	}
 
-	#formation div article {
-
-		width: 18%;
-		text-align: center;
-		padding: 2% 5%;
-	}
 
 
 	footer {
@@ -517,22 +484,6 @@ footer {
 		display: inline-block;
 		width: 1em;
 		margin-left: 0em;
-	}
-
-	#formation div {
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#formation div article {
-
-
-		width: 80%;
-		margin: 1%;
-
-
 	}
 
 	#loisirs .fas {

@@ -116,7 +116,7 @@ p {
 ul {
 	list-style-type: none;
 	line-height: 2em;
-	text-align: justify;
+
 
 }
 
@@ -336,12 +336,7 @@ footer {
 
 @media (max-width: 1024px) {
 
-	* {
 
-		font-size: 1em;
-
-
-	}
 
 	h1 {
 		font-size: 2.5em;
@@ -349,6 +344,13 @@ footer {
 
 	h2 {
 		font-size: 1.8em;
+	}
+
+	.h3souligne {
+		font-size: 1.5em;
+		padding: 2%;
+		text-decoration: underline;
+	
 	}
 
 	.zone30,
@@ -378,22 +380,46 @@ footer {
 
 	}
 
+	#apropos p {
 
-	.experience {
-		display: flex;
-		flex-direction: column;
-		text-align: justify;
-		width: 90%;
-		margin: 0 5%;
+		padding: 5%;
 	}
 
 	.date {
 
 		width: 100%;
 		font-size: 0.8em;
-		padding: 2%;
+
 
 	}
+
+	.experience {
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		width: 90%;
+		margin: 5% 5%;
+	}
+
+	.experience article {
+
+		width: 100%;
+	}
+
+
+	li { padding-left: 3%;
+
+	}
+	
+	li:before {
+		content: "\25AA";
+		color: #212121;
+		display: inline-block;
+		width: 0.5em;
+
+	}
+
+
 
 
 
@@ -475,7 +501,7 @@ footer {
 
 	h3 {
 
-		font-size: 1.3em;
+		font-size: 0.6em;
 	}
 
 	li::before {

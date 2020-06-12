@@ -1,5 +1,3 @@
-/**** CODE COMMUN*****/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
@@ -165,8 +163,7 @@ header {
 }
 
 #entete {
-	background-image: url(images/background/979.jpg);
-	background-size: cover;
+
 	padding-top: 50px;
 
 }
@@ -318,8 +315,11 @@ footer {
 #loisirs .fas {
 
 	color: #FFA000;
-	font-size: 3em;
-	margin: 5%;
+	font-size: 30px;
+	margin: 2%;
+	padding: 3%;
+	border: solid #FFA000;
+	border-radius: 50%;
 
 
 }
@@ -340,17 +340,19 @@ footer {
 
 	h1 {
 		font-size: 2.5em;
+		text-align: center;
 	}
 
 	h2 {
 		font-size: 1.8em;
+		text-align: center;
 	}
 
 	.h3souligne {
 		font-size: 1.5em;
 		padding: 2%;
 		text-decoration: underline;
-	
+
 	}
 
 	.zone30,
@@ -407,10 +409,11 @@ footer {
 	}
 
 
-	li { padding-left: 3%;
+	li {
+		padding-left: 3%;
 
 	}
-	
+
 	li:before {
 		content: "\25AA";
 		color: #212121;
@@ -459,7 +462,6 @@ footer {
 	#loisirs .fas {
 
 		color: #FFA000;
-		font-size: 2em;
 		margin: 5%;
 
 	}
@@ -515,7 +517,8 @@ footer {
 	#loisirs .fas {
 
 
-		font-size: 1.3em;
+		font-size: 20px;
+		margin: 2%;
 
 
 	}

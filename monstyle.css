@@ -9,6 +9,8 @@
 		url('geometrysoftpro_boldn_macroman/Geometry_Soft_Pro-Bold_N-webfont.svg#geometrysoftpro_boldn_macroman') format('svg');
 }
 
+
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -81,7 +83,6 @@ h2 .fas {
 /**** SPAN TYP0 *****/
 
 .yellow {
-
 	color: #FFA000;
 	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
 }
@@ -91,7 +92,6 @@ h2 .fas {
 	padding-bottom: 0.5px;
 	border-bottom: 1.5px solid #FFA000;
 	font-family: 'geometrysoftpro_boldn_macroman', Arial, serif;
-
 }
 
 /**** Liens *****/
@@ -316,8 +316,8 @@ footer {
 
 	color: #FFA000;
 	font-size: 25px;
-width: 60px;
-height: 60px;
+	width: 60px;
+	height: 60px;
 	margin: 2%;
 	border: solid #FFA000;
 	border-radius: 50%;
@@ -329,12 +329,7 @@ height: 60px;
 }
 
 
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
-/******** RESPONSIVE******/
+
 /******** RESPONSIVE******/
 /******** RESPONSIVE******/
 
